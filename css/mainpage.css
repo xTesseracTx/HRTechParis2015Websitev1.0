@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* Mainpage CSS definitions | The rules effect only the index.html page */
+
+p {
+        font-size: 32px;
+        font-weight: 300;
+	margin-top: 35px;
+	margin-bottom: 55px;
+}
+
+#ParisViewInnerContainer, #BecomeASponsorInnerContainer, #BecomeASpeakerInnerContainer, #London2015InnerContainer, #GreyFooterInnerContainer, #BlackFooterInnerContainer {
+	width:100%;
+	max-width:850px;
+	margin:0 auto;
+	text-align:center;
+}
+#ParisViewInnerContainer, #BecomeASponsorInnerContainer, #London2015InnerContainer {
+	color: #fff;
+}
+#BecomeASponsorInnerContainer, #BecomeASpeakerInnerContainer, #London2015InnerContainer {
+	padding-top: 35px;
+}
+#BecomeASponsorInnerContainer h1, #BecomeASpeakerInnerContainer h1, #London2015InnerContainer h1 {
+	font-size: 60px;
+}
+#BecomeASponsorContainer, #London2015Container {
+	background-color: #06222c;
+	color: #fff;
+}
+@media (max-width: 640px){
+	p {
+		font-size: 30px;
+		margin-bottom: 35px;
+	}
+	#ParisViewInnerContainer, #BecomeASponsorInnerContainer, #BecomeASpeakerInnerContainer, #London2015InnerContainer, #GreyFooterInnerContainer, #BlackFooterInnerContainer {
+		max-width: 320px;
+	}
+	#BecomeASponsorInnerContainer h1, #BecomeASpeakerInnerContainer h1, #London2015InnerContainer h1 {
+		font-size: 46px;
+	}
+}
+
+/* Paris View */
+#ParisViewContainer {
+	background-image: url(../img/mainpage/paris-view-background.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-top: 90px;
+	padding-bottom: 240px;
+}
+#ParisViewInnerContainer h1 {
+	margin-top: 90px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#ParisViewInnerContainer > p {
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+#TwoForOneContainer p {
+	color: #000;
+	font-weight: 300;
+	font-size: 28px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+#ApplyTwoForOne {
+	font-size: 26px;
+	max-width: 320px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#ApplyFor2For1Modal, #ApplyFor2For1Modal * { /* general.css [ * {transition: all 0.3s;} ] bugfix */
+	transition: none;
+}
+#ExpoLogosContainer {
+	max-width: 500px;
+	width:100%;
+	margin: 0 auto;
+	margin-top: 85px;
+}
+#ExpoLogosContainer fieldset {
+	border:1px solid #fff;
+	width:100%;
+	text-align:center;
+}
+
+#ExpoLogosContainer fieldset legend {
+	color:#fff;
+	padding:0 10px;
+	font-size:16px;
+}
+#ExpoLogosContainer img {
+	margin: 0 12px;
+	display: inline-block;
+}
+@media (max-width: 640px){
+	#ParisViewContainer {
+		padding-top: 35px;
+		padding-bottom: 65px;
+		background-image: url(../img/mainpage/paris-view-mobile-background.jpg);
+	}
+	#ParisViewInnerContainer h1 {
+		margin-top: 30px;
+		line-height: 60px;
+		font-size: 48px;
+	}
+	#ParisViewInnerContainer p {
+		max-width: 250px;
+		margin-bottom: 35px;
+	}
+	#ParisViewInnerContainer > p {
+		margin-bottom: 15px;
+		line-height: 40px;
+	}
+	#TwoForOneContainer { max-width: 260px; margin: 0 auto; }
+	#ExpoLogosContainer { margin-top: 40px; }
+	#ExpoLogosContainer img { margin: 0 0 15px 0; }
+	#ExpoLogosContainer fieldset { max-width: 235px; }
+}
+/* END Paris View */
+
+/* Headline */
+#HeadlineContainer {
+	width: 100%;
+	max-width: 890px;
+	margin: 0 auto;
+}
+#HeadlineContainer h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+	color: #29a0c7;
+	margin-top: 125px;
+	margin-bottom: 110px;
+}
+@media (max-width: 768px){
+	#HeadlineContainer h1 {
+		max-width: 500px;
+	}
+
+}
+@media (max-width: 640px){
+	#HeadlineContainer h1 {
+		max-width: 280px;
+		font-size: 30px;
+		line-height: 36px;
+		margin-top: 60px;
+		margin-bottom: 55px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+/* END Headline */
+
+/* Become a Sponsor */
+#BecomeASponsorInnerContainer {
+	max-width: 900px;
+}
+#BecomeASponsorInnerContainer p {
+	max-width: 780px;
+	line-height: 50px;
+}
+#ApplyAsSponsorButton {
+	margin-bottom: 75px;
+}
+#SponsorsLogoContainer {
+	padding-top: 55px;
+	padding-bottom: 55px;
+	display: flex; display: -moz-flex; display: -webkit-flex;
+	justify-content: space-around; -moz-justify-content: space-around; -webkit-justify-content: space-around;
+	align-items: center; -moz- align-items: center; -webkit-align-items: center;
+}
+.sponsorlogo {
+	background-size: cover;
+}
+#IBM {
+	width: 165px;
+	height: 62px;
+	background-image: url(../img/mainpage/sponsors/ibm.png);
+}
+#Oracle {
+	width: 236px;
+	height: 31px;
+	background-image: url(../img/mainpage/sponsors/oracle.png);	
+}
+#SAP {
+	width: 136px;
+	height: 72px;
+	background-image: url(../img/mainpage/sponsors/sap.png);	
+}
+#WorkDay {
+	width: 188px;
+	height: 75px;
+	background-image: url(../img/mainpage/sponsors/workday.png);	
+}
+@media (max-width: 768px){
+	#SponsorsLogoContainer {
+		max-width: 500px;
+		flex-wrap: wrap; -moz-flex-wrap: wrap; -webkit-flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.sponsorlogo {
+		display: inline-block;
+		margin: 20px;
+	}
+}
+@media (max-width: 640px) {
+	#BecomeASponsorInnerContainer p {
+		max-width: 246px;
+		line-height: 36px;
+	}
+	#PastSponsors {
+		font-size: 36px !important;
+	}
+	#ApplyAsSponsorButton {
+		margin-bottom: 35px;
+	}
+	#SponsorsLogoContainer {
+		padding-bottom: 0px;
+	}
+	.sponsorlogo {
+		margin: 0px 20px 50px 20px;
+	}
+}
+@media (max-width: 340px) {
+	#BecomeASponsorInnerContainer h1 {
+		font-size: 40px;
+	}
+}
+/* END Become a Sponsor */
+
+/* Become a Speaker */
+#BecomeASpeakerInnerContainer {
+	max-width: 940px;
+	padding-bottom: 55px;
+}
+#BecomeASpeakerInnerContainer h3 {
+	font-size: 36px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#SpeakersPhotoContainer {
+	display: flex; display: -moz-flex; display: -webkit-flex;
+	justify-content: space-between; -moz-justify-content: space-between; -webkit-justify-content: space-between;
+}
+.Speaker {
+	width: 280px;
+}
+.SpeakerPhoto {
+	width: 280px;
+	height: 280px;
+}
+.SpeakerInfo {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background-color: #06222c;
+	padding: 17px 5px;
+	color: #fff;
+}
+#HamelG {
+	background-image: url(../img/mainpage/speakers/HamelG.jpg);
+}
+#BotsmanR {
+	background-image: url(../img/mainpage/speakers/BotsmanR.jpg);
+}
+#PinkD {
+	background-image: url(../img/mainpage/speakers/PinkD.jpg);
+}
+@media (max-width: 900px){
+	#BecomeASpeakerInnerContainer {
+		padding-bottom: 0;
+	}	
+	#SpeakersPhotoContainer {
+		flex-wrap: wrap; -moz-flex-wrap: wrap; -webkit-flex-wrap: wrap;
+		justify-content: space-around; -moz-justify-content: space-around; -webkit-justify-content: space-around;
+		align-items: center; -moz-align-items: center; -webkit-align-items: center;
+		max-width: 630px;
+		margin: 0 auto;
+	}
+	.Speaker {
+		margin: 0 auto;		
+		margin-bottom: 30px;
+	}	
+}
+@media (max-width:640px){
+	#BecomeASpeakerInnerContainer p {
+		max-width: 250px;
+	}
+	#BecomeASpeakerInnerContainer h3 {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	#SpeakersPhotoContainer {
+		flex-direction: column; -moz-flex-direction: column; -webkit-flex-direction: column;
+	}
+}
+@media (max-width: 340px) {
+	#BecomeASpeakerInnerContainer h1 {
+		font-size: 40px;
+	}
+}
+/* END Become a Speaker */
+
+/* London 2015 */
+#London2015Container {
+	background-image: url(../img/mainpage/london-background.png);
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	padding-bottom: 20%;
+}
+@media (max-width: 640px){
+	#London2015Container {
+		background-image: url(../img/mainpage/london-mobile-background.png);
+		padding-bottom: 50%;
+	}
+	#London2015InnerContainer p {
+		max-width: 255px;
+	}
+}
+/* END London 2015 */

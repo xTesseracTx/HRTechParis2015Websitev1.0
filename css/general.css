@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* General CSS Definitions |The rules effects every page of the website */
+
+body {
+		font-family: 'Roboto', sans-serif;
+		padding: 0;
+                margin: 0;
+	}
+
+* {
+transition: all 0.3s;
+}	
+
+h1, h2, h3, h4, h5, h6 {
+		font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p {
+                margin: 0 auto;
+                text-align: center;
+}
+a {
+                text-decoration: none;
+}
+.button {
+	width:100%;
+	max-width:280px;
+	padding-top:8px;
+	background:#16aae1;
+	color:#fff;
+        margin: 0 auto;
+        font-size: 18px;
+        height: 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+}
+.button:hover {
+	background:#fc354c;
+}
+.ColorsContainer {
+                width: 100%;
+}
+.ColorsContainer div {
+                width: 25%;
+                height: 8px;
+                float: left;
+}
+.RedStripe { background-color: #fc354c; }
+.OrangeStripe { background-color: #ff8e2d; }
+.GreenStripe { background-color: #8fbe00; }
+.BlueStripe { background-color: #29a0c7; }
+
+/* Go Top Scroll */
+.GoTopButton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+}
+#GoTopImg{
+    width:70px; 
+    height:70px;
+}
+@media (max-width:580px){
+    .GoTopButton {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+/* END Go Top Scroll */
+
+/* Sticky Social */
+#StickySocialContainer {
+	position: fixed;
+	float: left;
+	top: 25%;
+	height: 145px;
+}
+.StickySocial {
+	height: 43px;
+	width: 84px;
+	margin-left: -42px;
+	margin-top: 3px;
+        text-align: right;
+}
+#Facebook {
+	background: #3460a1;
+}
+#Twitter {
+	background: #28aae1;
+}
+#LinkedIn {
+	background: #136d9d;
+}
+#Flickr {
+	background: #ed2a90;
+}
+#SlideShare {
+	background: #1e9da0;
+}
+#Facebook:hover, #Twitter:hover, #LinkedIn:hover, #Flickr:hover, #SlideShare:hover {
+	margin-left: 0px;
+}
+@media (max-width:480px){
+                #StickySocialContainer { display: none; }
+}
+/* END Sticky Social */
+
+/* Modal Forms */
+.reveal-modal, .reveal-modal * {
+                box-sizing: border-box;         
+}
+.reveal-modal {
+        width: 100%;
+        max-width: 580px;
+        left: 0;
+        right: 0;
+        top: 65px;
+        margin: 0 auto;
+        padding: 15px 30px 30px 30px;
+}
+.reveal-modal h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 9px;
+        color: #333333;
+        text-transform: uppercase;
+}
+.reveal-modal p {
+        color: #333333;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 7px 0px 15px 0px;
+}
+.FormInputFields input, .FormInputFields textarea {
+        font-family: 'Roboto', sans-serif;
+	width: 100%;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	font-size: 18px;
+	font-weight: 400;
+	height: 45px;
+        color: #949494;
+        border: 1px solid #949494;
+}
+.FormInputFields textarea {
+	padding-top: 10px;
+        height: 120px;
+}
+.FormInputFields .button {
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 0;
+        height: 45px;
+        border: none;
+        color: #fff;
+        padding: 0;
+        max-width: 100%;
+}
+.reveal-modal .close-reveal-modal {
+	font-size: 40px;
+}
+@media (max-width: 640px){
+                .reveal-modal {
+                      top: 0;          
+                      padding: 15px 20px 20px 20px;      
+                }
+                .reveal-modal h2 {
+                          font-size: 24px;
+                          margin-bottom: 10px;
+                }
+                .reveal-modal p {
+                          font-size: 14px;
+                          margin: 5px 0px 7px 0px;
+                }
+                .FormInputFields input, .FormInputFields textarea {
+                           height: 35px;
+                           font-size: 16px;
+                           padding-left: 10px;
+                           margin-bottom: 10px;
+                }
+                .FormInputFields textarea {
+                            padding-top: 5px;    
+                }
+                .FormInputFields .button {
+                            height: 35px;    
+                }
+}
+/*END Modal Forms */
